@@ -1,4 +1,5 @@
 {
+  homepage": "https://KHUSHALVIRANI.github.io/task-management-frontend",
   "name": "nestjs-course-frontend",
   "version": "0.1.0",
   "private": true,
@@ -25,6 +26,8 @@
     "build": "cross-env react-app-rewired build",
     "test": "cross-env react-app-rewired test --env=jsdom",
     "eject": "cross-env react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
